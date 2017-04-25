@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="GP" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="GPContainer1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="mk_agendas" EntityType="GP.mk_agendas" />
+    <EntitySet Name="mk_listarCentrais" EntityType="GP.mk_listarCentrais" />
+    <EntitySet Name="mk_domicilios" EntityType="GP.mk_domicilios" />
+    <EntitySet Name="mk_lojas" EntityType="GP.mk_lojas" />
+    <EntitySet Name="mk_simulacao" EntityType="GP.mk_simulacao" />
+  </EntityContainer>
+  <EntityType Name="mk_agendas">
+    <Key>
+      <PropertyRef Name="agendasID" />
+    </Key>
+    <Property Name="agendasID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idEC" Type="Int32" />
+    <Property Name="id" Type="Int32" />
+    <Property Name="dataVencimento" Type="DateTime" Precision="3" />
+    <Property Name="descricao" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="valorDisponivel" Type="Double" />
+    <Property Name="valorLiquido" Type="Double" />
+    <Property Name="idAgendas" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="mk_listarCentrais">
+    <Key>
+      <PropertyRef Name="listarCentraisID" />
+    </Key>
+    <Property Name="listarCentraisID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id" Type="Int32" />
+    <Property Name="codigoEc" Type="Int32" />
+    <Property Name="nome" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="documento" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="tipoPessoa" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="tipoPagamento" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="valorBruto" Type="Double" />
+    <Property Name="valorBloqueado" Type="Double" />
+    <Property Name="valorDisponivel" Type="Double" />
+  </EntityType>
+  <EntityType Name="mk_domicilios">
+    <Key>
+      <PropertyRef Name="domiciliosID" />
+    </Key>
+    <Property Name="domiciliosID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id" Type="Int32" />
+    <Property Name="descricao" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="valor" Type="Double" />
+    <Property Name="valorLiquido" Type="Double" />
+  </EntityType>
+  <EntityType Name="mk_lojas">
+    <Key>
+      <PropertyRef Name="lojasID" />
+    </Key>
+    <Property Name="lojasID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id" Type="Int32" />
+    <Property Name="codEC" Type="Int32" />
+    <Property Name="descricao" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="valorDisponivel" Type="Double" />
+  </EntityType>
+  <EntityType Name="mk_simulacao">
+    <Key>
+      <PropertyRef Name="simulacaoID" />
+    </Key>
+    <Property Name="simulacaoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idEC" Type="Int32" />
+    <Property Name="codigoEc" Type="Int32" />
+    <Property Name="nome" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="documento" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="tipoPagamento" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="categoria" Type="Int32" />
+    <Property Name="categoriaDescricao" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="taxaPromocional" Type="Int32" />
+    <Property Name="taxaPromocionalDescricao" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="taxa" Type="Double" />
+    <Property Name="tipoTaxa" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="taxaDescricao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="numeroOperacao" Type="Int32" />
+    <Property Name="dataOperacao" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="dataPagamento" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="taxaAntecipada" Type="Double" />
+    <Property Name="custoOperacao" Type="Double" />
+    <Property Name="spreadOperacao" Type="Double" />
+    <Property Name="valorBruto" Type="Double" />
+    <Property Name="valorTaxaAntecipada" Type="Double" />
+    <Property Name="valorLiquido" Type="Double" />
+    <Property Name="primeiroVencimento" Type="DateTime" Precision="3" />
+    <Property Name="ultimoVencimento" Type="DateTime" Precision="3" />
+    <Property Name="prazoMedio" Type="Double" />
+    <Property Name="origemTaxa" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="valorLiquidoDestacado" Type="Double" />
+    <Property Name="icConcluida" Type="Boolean" />
+    <Property Name="domicilioBancario" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="situacao" Type="Int32" />
+    <Property Name="situacaoDesc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

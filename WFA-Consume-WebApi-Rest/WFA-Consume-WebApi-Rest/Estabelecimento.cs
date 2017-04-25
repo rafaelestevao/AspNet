@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WFA_Consume_WebApi_Rest
+{
+    public class Estabelecimento
+    {
+        public int id { get; set; }
+        public int codigoEc { get; set; }
+        public string nome { get; set; }
+        public string documento { get; set; }
+        public string tipoPessoa { get; set; }
+        public string tipoPagamento { get; set; }
+        public double valorBruto { get; set; }
+        public double valorBloqueado { get; set; }
+        public double valorDisponivel { get; set; }
+    }
+}

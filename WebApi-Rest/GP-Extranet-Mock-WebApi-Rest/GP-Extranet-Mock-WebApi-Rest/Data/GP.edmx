@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="GP.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="mk_agendas">
+          <Key>
+            <PropertyRef Name="agendasID" />
+          </Key>
+          <Property Name="agendasID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idEC" Type="int" />
+          <Property Name="id" Type="int" />
+          <Property Name="dataVencimento" Type="datetime" />
+          <Property Name="descricao" Type="varchar" MaxLength="50" />
+          <Property Name="valorDisponivel" Type="float" />
+          <Property Name="valorLiquido" Type="float" />
+          <Property Name="idAgendas" Type="nvarchar(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'GP_Extranet.dbo.mk_domicilios' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="mk_domicilios">
+          <Key>
+            <PropertyRef Name="domiciliosID" />
+          </Key>
+          <Property Name="domiciliosID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id" Type="int" />
+          <Property Name="descricao" Type="varchar" MaxLength="200" />
+          <Property Name="valor" Type="float" />
+          <Property Name="valorLiquido" Type="float" />
+        </EntityType>
+        <EntityType Name="mk_listarCentrais">
+          <Key>
+            <PropertyRef Name="listarCentraisID" />
+          </Key>
+          <Property Name="listarCentraisID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id" Type="int" />
+          <Property Name="codigoEc" Type="int" />
+          <Property Name="nome" Type="nvarchar" MaxLength="300" />
+          <Property Name="documento" Type="nvarchar" MaxLength="30" />
+          <Property Name="tipoPessoa" Type="varchar" MaxLength="1" />
+          <Property Name="tipoPagamento" Type="varchar" MaxLength="1" />
+          <Property Name="valorBruto" Type="float" />
+          <Property Name="valorBloqueado" Type="float" />
+          <Property Name="valorDisponivel" Type="float" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'GP_Extranet.dbo.mk_lojas' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="mk_lojas">
+          <Key>
+            <PropertyRef Name="lojasID" />
+          </Key>
+          <Property Name="lojasID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id" Type="int" />
+          <Property Name="codEC" Type="int" />
+          <Property Name="descricao" Type="varchar" MaxLength="150" />
+          <Property Name="valorDisponivel" Type="float" />
+        </EntityType>
+        <EntityType Name="mk_simulacao">
+          <Key>
+            <PropertyRef Name="simulacaoID" />
+          </Key>
+          <Property Name="simulacaoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idEC" Type="int" />
+          <Property Name="codigoEc" Type="int" />
+          <Property Name="nome" Type="nvarchar" MaxLength="300" />
+          <Property Name="documento" Type="nvarchar" MaxLength="30" />
+          <Property Name="tipoPagamento" Type="varchar" MaxLength="30" />
+          <Property Name="categoria" Type="int" />
+          <Property Name="categoriaDescricao" Type="varchar" MaxLength="200" />
+          <Property Name="taxaPromocional" Type="int" />
+          <Property Name="taxaPromocionalDescricao" Type="nvarchar" MaxLength="30" />
+          <Property Name="taxa" Type="float" />
+          <Property Name="tipoTaxa" Type="varchar" MaxLength="30" />
+          <Property Name="taxaDescricao" Type="varchar" MaxLength="10" />
+          <Property Name="numeroOperacao" Type="int" />
+          <Property Name="dataOperacao" Type="nvarchar" MaxLength="100" />
+          <Property Name="dataPagamento" Type="nvarchar" MaxLength="100" />
+          <Property Name="taxaAntecipada" Type="float" />
+          <Property Name="custoOperacao" Type="float" />
+          <Property Name="spreadOperacao" Type="float" />
+          <Property Name="valorBruto" Type="float" />
+          <Property Name="valorTaxaAntecipada" Type="float" />
+          <Property Name="valorLiquido" Type="float" />
+          <Property Name="primeiroVencimento" Type="datetime" />
+          <Property Name="ultimoVencimento" Type="datetime" />
+          <Property Name="prazoMedio" Type="float" />
+          <Property Name="origemTaxa" Type="varchar" MaxLength="30" />
+          <Property Name="valorLiquidoDestacado" Type="float" />
+          <Property Name="icConcluida" Type="bit" />
+          <Property Name="domicilioBancario" Type="nvarchar" MaxLength="200" />
+          <Property Name="situacao" Type="int" />
+          <Property Name="situacaoDesc" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="GPStoreContainer">
+          <EntitySet Name="mk_agendas" EntityType="Self.mk_agendas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mk_listarCentrais" EntityType="Self.mk_listarCentrais" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mk_simulacao" EntityType="Self.mk_simulacao" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mk_domicilios" EntityType="Self.mk_domicilios" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[mk_domicilios].[domiciliosID] AS [domiciliosID], 
+[mk_domicilios].[id] AS [id], 
+[mk_domicilios].[descricao] AS [descricao], 
+[mk_domicilios].[valor] AS [valor], 
+[mk_domicilios].[valorLiquido] AS [valorLiquido]
+FROM [dbo].[mk_domicilios] AS [mk_domicilios]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="mk_lojas" EntityType="Self.mk_lojas" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[mk_lojas].[lojasID] AS [lojasID], 
+[mk_lojas].[id] AS [id], 
+[mk_lojas].[codEC] AS [codEC], 
+[mk_lojas].[descricao] AS [descricao], 
+[mk_lojas].[valorDisponivel] AS [valorDisponivel]
+FROM [dbo].[mk_lojas] AS [mk_lojas]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="GP" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="GPContainer1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="mk_agendas" EntityType="GP.mk_agendas" />
+          <EntitySet Name="mk_listarCentrais" EntityType="GP.mk_listarCentrais" />
+          <EntitySet Name="mk_domicilios" EntityType="GP.mk_domicilios" />
+          <EntitySet Name="mk_lojas" EntityType="GP.mk_lojas" />
+          <EntitySet Name="mk_simulacao" EntityType="GP.mk_simulacao" />
+        </EntityContainer>
+        <EntityType Name="mk_agendas">
+          <Key>
+            <PropertyRef Name="agendasID" />
+          </Key>
+          <Property Name="agendasID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idEC" Type="Int32" />
+          <Property Name="id" Type="Int32" />
+          <Property Name="dataVencimento" Type="DateTime" Precision="3" />
+          <Property Name="descricao" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="valorDisponivel" Type="Double" />
+          <Property Name="valorLiquido" Type="Double" />
+          <Property Name="idAgendas" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="mk_listarCentrais">
+          <Key>
+            <PropertyRef Name="listarCentraisID" />
+          </Key>
+          <Property Name="listarCentraisID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id" Type="Int32" />
+          <Property Name="codigoEc" Type="Int32" />
+          <Property Name="nome" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="documento" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="tipoPessoa" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="tipoPagamento" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="valorBruto" Type="Double" />
+          <Property Name="valorBloqueado" Type="Double" />
+          <Property Name="valorDisponivel" Type="Double" />
+        </EntityType>
+        <EntityType Name="mk_domicilios">
+          <Key>
+            <PropertyRef Name="domiciliosID" />
+          </Key>
+          <Property Name="domiciliosID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id" Type="Int32" />
+          <Property Name="descricao" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="valor" Type="Double" />
+          <Property Name="valorLiquido" Type="Double" />
+        </EntityType>
+        <EntityType Name="mk_lojas">
+          <Key>
+            <PropertyRef Name="lojasID" />
+          </Key>
+          <Property Name="lojasID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id" Type="Int32" />
+          <Property Name="codEC" Type="Int32" />
+          <Property Name="descricao" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="valorDisponivel" Type="Double" />
+        </EntityType>
+        <EntityType Name="mk_simulacao">
+          <Key>
+            <PropertyRef Name="simulacaoID" />
+          </Key>
+          <Property Name="simulacaoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idEC" Type="Int32" />
+          <Property Name="codigoEc" Type="Int32" />
+          <Property Name="nome" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="documento" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="tipoPagamento" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="categoria" Type="Int32" />
+          <Property Name="categoriaDescricao" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="taxaPromocional" Type="Int32" />
+          <Property Name="taxaPromocionalDescricao" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="taxa" Type="Double" />
+          <Property Name="tipoTaxa" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="taxaDescricao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="numeroOperacao" Type="Int32" />
+          <Property Name="dataOperacao" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="dataPagamento" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="taxaAntecipada" Type="Double" />
+          <Property Name="custoOperacao" Type="Double" />
+          <Property Name="spreadOperacao" Type="Double" />
+          <Property Name="valorBruto" Type="Double" />
+          <Property Name="valorTaxaAntecipada" Type="Double" />
+          <Property Name="valorLiquido" Type="Double" />
+          <Property Name="primeiroVencimento" Type="DateTime" Precision="3" />
+          <Property Name="ultimoVencimento" Type="DateTime" Precision="3" />
+          <Property Name="prazoMedio" Type="Double" />
+          <Property Name="origemTaxa" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="valorLiquidoDestacado" Type="Double" />
+          <Property Name="icConcluida" Type="Boolean" />
+          <Property Name="domicilioBancario" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="situacao" Type="Int32" />
+          <Property Name="situacaoDesc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+        <Alias Key="Model" Value="GP" />
+        <Alias Key="Target" Value="GP.Store" />
+        <EntityContainerMapping CdmEntityContainer="GPContainer1" StorageEntityContainer="GPStoreContainer">
+          <EntitySetMapping Name="mk_agendas">
+            <EntityTypeMapping TypeName="GP.mk_agendas">
+              <MappingFragment StoreEntitySet="mk_agendas">
+                <ScalarProperty Name="idAgendas" ColumnName="idAgendas" />
+                <ScalarProperty Name="valorLiquido" ColumnName="valorLiquido" />
+                <ScalarProperty Name="valorDisponivel" ColumnName="valorDisponivel" />
+                <ScalarProperty Name="descricao" ColumnName="descricao" />
+                <ScalarProperty Name="dataVencimento" ColumnName="dataVencimento" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="idEC" ColumnName="idEC" />
+                <ScalarProperty Name="agendasID" ColumnName="agendasID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mk_listarCentrais">
+            <EntityTypeMapping TypeName="GP.mk_listarCentrais">
+              <MappingFragment StoreEntitySet="mk_listarCentrais">
+                <ScalarProperty Name="valorDisponivel" ColumnName="valorDisponivel" />
+                <ScalarProperty Name="valorBloqueado" ColumnName="valorBloqueado" />
+                <ScalarProperty Name="valorBruto" ColumnName="valorBruto" />
+                <ScalarProperty Name="tipoPagamento" ColumnName="tipoPagamento" />
+                <ScalarProperty Name="tipoPessoa" ColumnName="tipoPessoa" />
+                <ScalarProperty Name="documento" ColumnName="documento" />
+                <ScalarProperty Name="nome" ColumnName="nome" />
+                <ScalarProperty Name="codigoEc" ColumnName="codigoEc" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="listarCentraisID" ColumnName="listarCentraisID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mk_domicilios">
+            <EntityTypeMapping TypeName="GP.mk_domicilios">
+              <MappingFragment StoreEntitySet="mk_domicilios">
+                <ScalarProperty Name="valorLiquido" ColumnName="valorLiquido" />
+                <ScalarProperty Name="valor" ColumnName="valor" />
+                <ScalarProperty Name="descricao" ColumnName="descricao" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="domiciliosID" ColumnName="domiciliosID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mk_lojas">
+            <EntityTypeMapping TypeName="GP.mk_lojas">
+              <MappingFragment StoreEntitySet="mk_lojas">
+                <ScalarProperty Name="valorDisponivel" ColumnName="valorDisponivel" />
+                <ScalarProperty Name="descricao" ColumnName="descricao" />
+                <ScalarProperty Name="codEC" ColumnName="codEC" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="lojasID" ColumnName="lojasID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mk_simulacao">
+            <EntityTypeMapping TypeName="GP.mk_simulacao">
+              <MappingFragment StoreEntitySet="mk_simulacao">
+                <ScalarProperty Name="situacaoDesc" ColumnName="situacaoDesc" />
+                <ScalarProperty Name="situacao" ColumnName="situacao" />
+                <ScalarProperty Name="domicilioBancario" ColumnName="domicilioBancario" />
+                <ScalarProperty Name="icConcluida" ColumnName="icConcluida" />
+                <ScalarProperty Name="valorLiquidoDestacado" ColumnName="valorLiquidoDestacado" />
+                <ScalarProperty Name="origemTaxa" ColumnName="origemTaxa" />
+                <ScalarProperty Name="prazoMedio" ColumnName="prazoMedio" />
+                <ScalarProperty Name="ultimoVencimento" ColumnName="ultimoVencimento" />
+                <ScalarProperty Name="primeiroVencimento" ColumnName="primeiroVencimento" />
+                <ScalarProperty Name="valorLiquido" ColumnName="valorLiquido" />
+                <ScalarProperty Name="valorTaxaAntecipada" ColumnName="valorTaxaAntecipada" />
+                <ScalarProperty Name="valorBruto" ColumnName="valorBruto" />
+                <ScalarProperty Name="spreadOperacao" ColumnName="spreadOperacao" />
+                <ScalarProperty Name="custoOperacao" ColumnName="custoOperacao" />
+                <ScalarProperty Name="taxaAntecipada" ColumnName="taxaAntecipada" />
+                <ScalarProperty Name="dataPagamento" ColumnName="dataPagamento" />
+                <ScalarProperty Name="dataOperacao" ColumnName="dataOperacao" />
+                <ScalarProperty Name="numeroOperacao" ColumnName="numeroOperacao" />
+                <ScalarProperty Name="taxaDescricao" ColumnName="taxaDescricao" />
+                <ScalarProperty Name="tipoTaxa" ColumnName="tipoTaxa" />
+                <ScalarProperty Name="taxa" ColumnName="taxa" />
+                <ScalarProperty Name="taxaPromocionalDescricao" ColumnName="taxaPromocionalDescricao" />
+                <ScalarProperty Name="taxaPromocional" ColumnName="taxaPromocional" />
+                <ScalarProperty Name="categoriaDescricao" ColumnName="categoriaDescricao" />
+                <ScalarProperty Name="categoria" ColumnName="categoria" />
+                <ScalarProperty Name="tipoPagamento" ColumnName="tipoPagamento" />
+                <ScalarProperty Name="documento" ColumnName="documento" />
+                <ScalarProperty Name="nome" ColumnName="nome" />
+                <ScalarProperty Name="codigoEc" ColumnName="codigoEc" />
+                <ScalarProperty Name="idEC" ColumnName="idEC" />
+                <ScalarProperty Name="simulacaoID" ColumnName="simulacaoID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="UseLegacyProvider" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="GP" />
+  <Alias Key="Target" Value="GP.Store" />
+  <EntityContainerMapping CdmEntityContainer="GPContainer1" StorageEntityContainer="GPStoreContainer">
+    <EntitySetMapping Name="mk_agendas">
+      <EntityTypeMapping TypeName="GP.mk_agendas">
+        <MappingFragment StoreEntitySet="mk_agendas">
+          <ScalarProperty Name="idAgendas" ColumnName="idAgendas" />
+          <ScalarProperty Name="valorLiquido" ColumnName="valorLiquido" />
+          <ScalarProperty Name="valorDisponivel" ColumnName="valorDisponivel" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="dataVencimento" ColumnName="dataVencimento" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idEC" ColumnName="idEC" />
+          <ScalarProperty Name="agendasID" ColumnName="agendasID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mk_listarCentrais">
+      <EntityTypeMapping TypeName="GP.mk_listarCentrais">
+        <MappingFragment StoreEntitySet="mk_listarCentrais">
+          <ScalarProperty Name="valorDisponivel" ColumnName="valorDisponivel" />
+          <ScalarProperty Name="valorBloqueado" ColumnName="valorBloqueado" />
+          <ScalarProperty Name="valorBruto" ColumnName="valorBruto" />
+          <ScalarProperty Name="tipoPagamento" ColumnName="tipoPagamento" />
+          <ScalarProperty Name="tipoPessoa" ColumnName="tipoPessoa" />
+          <ScalarProperty Name="documento" ColumnName="documento" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="codigoEc" ColumnName="codigoEc" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="listarCentraisID" ColumnName="listarCentraisID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mk_domicilios">
+      <EntityTypeMapping TypeName="GP.mk_domicilios">
+        <MappingFragment StoreEntitySet="mk_domicilios">
+          <ScalarProperty Name="valorLiquido" ColumnName="valorLiquido" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="domiciliosID" ColumnName="domiciliosID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mk_lojas">
+      <EntityTypeMapping TypeName="GP.mk_lojas">
+        <MappingFragment StoreEntitySet="mk_lojas">
+          <ScalarProperty Name="valorDisponivel" ColumnName="valorDisponivel" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="codEC" ColumnName="codEC" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="lojasID" ColumnName="lojasID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mk_simulacao">
+      <EntityTypeMapping TypeName="GP.mk_simulacao">
+        <MappingFragment StoreEntitySet="mk_simulacao">
+          <ScalarProperty Name="situacaoDesc" ColumnName="situacaoDesc" />
+          <ScalarProperty Name="situacao" ColumnName="situacao" />
+          <ScalarProperty Name="domicilioBancario" ColumnName="domicilioBancario" />
+          <ScalarProperty Name="icConcluida" ColumnName="icConcluida" />
+          <ScalarProperty Name="valorLiquidoDestacado" ColumnName="valorLiquidoDestacado" />
+          <ScalarProperty Name="origemTaxa" ColumnName="origemTaxa" />
+          <ScalarProperty Name="prazoMedio" ColumnName="prazoMedio" />
+          <ScalarProperty Name="ultimoVencimento" ColumnName="ultimoVencimento" />
+          <ScalarProperty Name="primeiroVencimento" ColumnName="primeiroVencimento" />
+          <ScalarProperty Name="valorLiquido" ColumnName="valorLiquido" />
+          <ScalarProperty Name="valorTaxaAntecipada" ColumnName="valorTaxaAntecipada" />
+          <ScalarProperty Name="valorBruto" ColumnName="valorBruto" />
+          <ScalarProperty Name="spreadOperacao" ColumnName="spreadOperacao" />
+          <ScalarProperty Name="custoOperacao" ColumnName="custoOperacao" />
+          <ScalarProperty Name="taxaAntecipada" ColumnName="taxaAntecipada" />
+          <ScalarProperty Name="dataPagamento" ColumnName="dataPagamento" />
+          <ScalarProperty Name="dataOperacao" ColumnName="dataOperacao" />
+          <ScalarProperty Name="numeroOperacao" ColumnName="numeroOperacao" />
+          <ScalarProperty Name="taxaDescricao" ColumnName="taxaDescricao" />
+          <ScalarProperty Name="tipoTaxa" ColumnName="tipoTaxa" />
+          <ScalarProperty Name="taxa" ColumnName="taxa" />
+          <ScalarProperty Name="taxaPromocionalDescricao" ColumnName="taxaPromocionalDescricao" />
+          <ScalarProperty Name="taxaPromocional" ColumnName="taxaPromocional" />
+          <ScalarProperty Name="categoriaDescricao" ColumnName="categoriaDescricao" />
+          <ScalarProperty Name="categoria" ColumnName="categoria" />
+          <ScalarProperty Name="tipoPagamento" ColumnName="tipoPagamento" />
+          <ScalarProperty Name="documento" ColumnName="documento" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="codigoEc" ColumnName="codigoEc" />
+          <ScalarProperty Name="idEC" ColumnName="idEC" />
+          <ScalarProperty Name="simulacaoID" ColumnName="simulacaoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
