@@ -1,1 +1,0 @@
-c:\users\rafael.estevao\documents\visual studio 2015\Projects\TimeStamp\TimeStamp\bin\Debug\TimeStamp.exe.config
