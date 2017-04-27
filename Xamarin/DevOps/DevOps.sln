@@ -14,6 +14,7 @@ EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		DevOps\DevOps\DevOps.projitems*{5ec9edf6-973e-42d3-b24e-24d279ba664c}*SharedItemsImports = 4
+		DevOps\DevOps\DevOps.projitems*{61b1a19d-4531-40bc-89b7-dde6cbd7c204}*SharedItemsImports = 4
 		DevOps\DevOps\DevOps.projitems*{9c30781c-65fa-4cac-bef2-0994fbb4367d}*SharedItemsImports = 13
 		DevOps\DevOps\DevOps.projitems*{cdf90f66-f9c7-491f-847a-1d7f7a78eab1}*SharedItemsImports = 4
 	EndGlobalSection
