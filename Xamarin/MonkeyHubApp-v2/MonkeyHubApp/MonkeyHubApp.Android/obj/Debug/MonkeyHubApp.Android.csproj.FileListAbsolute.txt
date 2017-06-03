@@ -143,5 +143,15 @@ C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\M
 C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\bin\Debug\MonkeyHubApp.Android.dll.config
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\bin\Debug\Newtonsoft.Json.dll
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\bin\Debug\MonkeyHubApp.dll.config
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\bin\Debug\Newtonsoft.Json.xml
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\bin\Debug\Microsoft.CSharp.dll.mdb
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\bin\Debug\Mono.CSharp.dll.mdb
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\bin\Debug\System.Runtime.Serialization.Primitives.dll.mdb
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\obj\Debug\android\assets\Microsoft.CSharp.dll.mdb
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\obj\Debug\android\assets\Mono.CSharp.dll.mdb
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\obj\Debug\android\assets\System.Runtime.Serialization.Primitives.dll.mdb
 C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\obj\Debug\MonkeyHubApp.Android.dll.mdb
 C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\bin\Debug\MonkeyHubApp.Android.dll.mdb

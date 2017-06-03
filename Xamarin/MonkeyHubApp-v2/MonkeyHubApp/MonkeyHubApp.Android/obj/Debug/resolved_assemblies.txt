@@ -45,3 +45,10 @@ C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\M
 C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\obj\Debug\android\assets\System.Runtime.InteropServices.dll
 C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\obj\Debug\android\assets\System.Resources.ResourceManager.dll
 C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\obj\Debug\android\assets\System.Diagnostics.Tools.dll
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\obj\Debug\android\assets\Newtonsoft.Json.dll
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\obj\Debug\android\assets\System.Xml.XDocument.dll
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\obj\Debug\android\assets\System.Runtime.Serialization.Primitives.dll
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\obj\Debug\android\assets\System.Text.Encoding.dll
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\obj\Debug\android\assets\System.Text.Encoding.Extensions.dll
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\obj\Debug\android\assets\Microsoft.CSharp.dll
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.Android\obj\Debug\android\assets\Mono.CSharp.dll

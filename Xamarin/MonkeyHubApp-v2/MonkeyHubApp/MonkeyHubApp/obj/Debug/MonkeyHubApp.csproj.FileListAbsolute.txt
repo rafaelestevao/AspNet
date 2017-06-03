@@ -30,5 +30,15 @@ C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\M
 C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\obj\Debug\MonkeyHubApp.App.xaml.g.cs
 C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\obj\Debug\MonkeyHubApp.dll
 C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\obj\Debug\MonkeyHubApp.pdb
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\bin\Debug\MonkeyHubApp.dll.config
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\bin\Debug\System.Net.Http.dll
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\bin\Debug\System.Net.Http.xml
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\obj\Debug\MonkeyHubApp.csproj.App.config
 C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\obj\Debug\MonkeyHubApp.dll.mdb
 C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\bin\Debug\MonkeyHubApp.dll.mdb

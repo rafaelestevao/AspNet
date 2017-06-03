@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.UWP\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-03T07:04:57.639</Modified>
+      <Modified>2017-06-03T20:00:45.650</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.UWP\bin\x64\Debug\MonkeyHubApp.UWP.exe">
       <PackagePath>entrypoint\MonkeyHubApp.UWP.exe</PackagePath>
-      <Modified>2017-06-03T07:04:55.622</Modified>
+      <Modified>2017-06-03T20:00:39.726</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\notew7\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -513,7 +513,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\bin\Debug\MonkeyHubApp.dll">
       <PackagePath>MonkeyHubApp.dll</PackagePath>
-      <Modified>2017-06-03T07:04:49.661</Modified>
+      <Modified>2017-06-03T19:58:01.739</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -692,7 +692,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.UWP\bin\x64\Debug\Core\MonkeyHubApp.UWP.exe">
       <PackagePath>MonkeyHubApp.UWP.exe</PackagePath>
-      <Modified>2017-06-03T07:04:57.630</Modified>
+      <Modified>2017-06-03T20:00:45.638</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

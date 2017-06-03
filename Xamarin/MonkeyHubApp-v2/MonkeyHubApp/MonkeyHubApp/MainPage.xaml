@@ -5,8 +5,18 @@
              x:Class="MonkeyHubApp.MainPage">
 
     <StackLayout>
-        <Entry Text="{Binding SearchTerm}"></Entry>
-        <Button Text="Pesquisar" Command="{Binding SearchCommand}"></Button>
+        <Entry Text="{Binding SearchTerm}" />
+        <Button Text="Pesquisar" Command="{Binding SearchCommand}" />
+        <ListView ItemsSource="{Binding Resultados}}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding Description}"/>
+                    <!--<TextCell Text="{Binding Slug}"/>
+                    <TextCell Text="{Binding Description}"/>
+                    <TextCell Text="{Binding Id}"/>-->
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </StackLayout>
     
 </ContentPage>
