@@ -1,0 +1,2 @@
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp.UWP\MonkeyHubApp.UWP.csproj;x64
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\MonkeyHubApp.csproj;neutral
