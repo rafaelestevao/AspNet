@@ -40,5 +40,8 @@ C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\M
 C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\bin\Debug\System.Net.Http.Extensions.xml
 C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\bin\Debug\System.Net.Http.Primitives.xml
 C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\obj\Debug\MonkeyHubApp.csproj.App.config
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\obj\Debug\MonkeyHubApp.AboutPage.xaml.g.cs
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\obj\Debug\MonkeyHubApp.CategoriaPage.xaml.g.cs
+C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\obj\Debug\MonkeyHubApp.ContentWebPage.xaml.g.cs
 C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\obj\Debug\MonkeyHubApp.dll.mdb
 C:\Users\notew7\Documents\Projetos\AspNet\Xamarin\MonkeyHubApp-v2\MonkeyHubApp\MonkeyHubApp\bin\Debug\MonkeyHubApp.dll.mdb
