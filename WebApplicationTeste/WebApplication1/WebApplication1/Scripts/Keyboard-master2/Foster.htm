@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Virtual Keyboard</title>
+    
+    <!-- jQuery & jQuery UI + theme (required) -->
+    <link href="http://code.jquery.com/ui/1.9.2/themes/ui-darkness/jquery-ui.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.min.js"></script>
+    
+    <!-- keyboard widget css & script (required) -->
+    <link href="css/keyboard.css" rel="stylesheet">
+    <script src="js/jquery.keyboard.js"></script>
+    
+    <!-- keyboard extensions (optional) -->
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery.keyboard.extension-typing.js"></script>
+    <script src="js/jquery.keyboard.extension-autocomplete.js"></script>
+    
+    <!-- tooltips -->
+    <script src="demo/jquery.chili-2.2.js"></script>
+    
+    <!-- syntax highlighting -->
+    <script src="demo/recipes.js"></script>
+
+    <script type="text/javascript">
+
+        jQuery(function ($) {
+
+            $.keyboard.keyaction.panic = function (base) {
+                $('.ui-keyboard-preview-wrapper textarea').val('');
+                $('.ui-keyboard-preview-wrapper').css("display", "none");
+            };
+
+           $('#Test').keyboard({
+
+                display: {
+                    'bksp': "\u2190",
+                    'panic': "Limpar",
+                    'accept': 'OK',
+                    'cancel': 'Cancelar',
+                    'default': 'ABC',
+                    'meta1': '.?123',
+                    'meta2': '#+='
+                },
+
+                layout: 'custom',
+
+                customLayout: {
+
+                    'default': [
+            'q w e r t y u i o p {panic!!}',
+            'a s d f g h j k l {enter}',
+            '{s} z x c v b n m , . {s}',
+            '{meta1} {space} {cancel} {accept}'
+        ],
+                    'shift': [
+            'Q W E R T Y U I O P {panic!!}',
+            'A S D F G H J K L {enter}',
+            '{s} Z X C V B N M ! ? {s}',
+            '{meta1} {space} {meta1} {accept}'
+        ],
+                    'meta1': [
+            '1 2 3 4 5 6 7 8 9 0 {panic!!}',
+            '- / : ; ( ) \u20ac & @ {enter}',
+            '{meta2} . , ? ! \' " {meta2}',
+            '{default} {space} {default} {accept}'
+        ],
+                    'meta2': [
+            '[ ] { } # % ^ * + = {panic!!}',
+            '_ \\ | ~ < > $ \u00a3 \u00a5 {enter}',
+            '{meta1} . , ? ! \' " {meta1}',
+            '{default} {space} {default} {accept}'
+        ]
+
+                }
+
+            });
+            
+        });
+    </script>
+
+</head>
+<body>
+    <textarea style="background-color: White; background: none;" id="Test"></textarea>
+</body>
+</html>

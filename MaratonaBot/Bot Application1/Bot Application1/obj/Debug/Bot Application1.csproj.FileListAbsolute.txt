@@ -61,3 +61,4 @@ C:\Users\rafae\Documents\github-pessoal\AspNet\MaratonaBot\Bot Application1\Bot 
 C:\Users\rafae\Documents\github-pessoal\AspNet\MaratonaBot\Bot Application1\Bot Application1\bin\fr\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
 C:\Users\rafae\Documents\github-pessoal\AspNet\MaratonaBot\Bot Application1\Bot Application1\bin\ja\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
 C:\Users\rafae\Documents\github-pessoal\AspNet\MaratonaBot\Bot Application1\Bot Application1\bin\zh-hans\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
+C:\Users\rafae\Documents\github-pessoal\AspNet\MaratonaBot\Bot Application1\Bot Application1\bin\Microsoft.Rest.ClientRuntime.xml

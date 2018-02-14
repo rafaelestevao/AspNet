@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions
+ xmlns="http://schemas.xmlsoap.org/wsdl/"
+ xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+ xmlns:xsdLocal1="urn:/crmondemand/xml/Category/Data"
+ targetNamespace="urn:crmondemand/ws/ecbs/category/"
+ xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:xsdLocal2="urn:/crmondemand/xml/Category/Query"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:tns="urn:crmondemand/ws/ecbs/category/"
+><types
+><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:/crmondemand/xml/Category/Query" xmlns:xsdLocal2="urn:/crmondemand/xml/Category/Query" attributeFormDefault="unqualified" elementFormDefault="qualified" 
+><xsd:annotation
+><xsd:documentation
+>Copyright (C) 2001, 2008, Oracle and/or its affiliates. All rights reserved. Siebel XSD Generation</xsd:documentation
+></xsd:annotation
+><xsd:element name="ListOfCategory" type="xsdLocal2:ListOfCategoryQuery"
+/><xsd:complexType name="ListOfCategoryTopElmtQuery"
+><xsd:sequence
+><xsd:element name="ListOfCategory" type="xsdLocal2:ListOfCategoryQuery" minOccurs="0" maxOccurs="1"
+/></xsd:sequence
+></xsd:complexType
+><xsd:complexType name="ListOfCategoryQuery"
+><xsd:sequence
+><xsd:element name="Category" type="xsdLocal2:CategoryQuery" minOccurs="0" maxOccurs="1"
+/></xsd:sequence
+><xsd:attribute name="pagesize" type="xsd:integer"
+/><xsd:attribute name="startrownum" type="xsd:integer"
+/><xsd:attribute name="recordcountneeded" type="xsd:boolean"
+/></xsd:complexType
+><xsd:complexType name="CategoryQuery"
+><xsd:all
+><xsd:element name="ModifiedDate" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="CreatedDate" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="ModifiedById" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="CreatedById" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="ModId" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="Id" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="Description" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="ExternalSystemId" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="IntegrationId" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="Name" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="ParentCategoryExternalSystemId" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="ParentCategoryId" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="ParentCategory" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="UpdatedByFirstName" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="UpdatedByLastName" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="UpdatedByUserSignInId" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="UpdatedByAlias" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="UpdatedByFullName" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="UpdatedByIntegrationId" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="UpdatedByExternalSystemId" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="UpdatedByEMailAddr" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="CreatedByFirstName" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="CreatedByLastName" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="CreatedByUserSignInId" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="CreatedByAlias" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="CreatedByFullName" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="CreatedByIntegrationId" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="CreatedByExternalSystemId" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="CreatedByEMailAddr" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="CreatedBy" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/><xsd:element name="ModifiedBy" type="xsdLocal2:queryType" minOccurs="0" maxOccurs="1"
+/></xsd:all
+><xsd:attribute name="searchspec" type="xsd:string"
+/></xsd:complexType
+><xsd:complexType name="queryType"
+><xsd:simpleContent
+><xsd:extension base="xsd:string"
+><xsd:attribute name="sortorder" type="xsd:string"
+/><xsd:attribute name="sortsequence" type="xsd:string"
+/></xsd:extension
+></xsd:simpleContent
+></xsd:complexType
+></xsd:schema
+><xsd:schema
+ elementFormDefault="qualified"
+ attributeFormDefault="unqualified"
+ targetNamespace="urn:crmondemand/ws/ecbs/category/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+><xsd:import
+ namespace="urn:/crmondemand/xml/Category/Query"
+></xsd:import
+><xsd:import
+ namespace="urn:/crmondemand/xml/Category/Data"
+></xsd:import
+><xsd:element
+ name="CategoryUpdate_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ ref="xsdLocal1:ListOfCategory"
+></xsd:element
+><xsd:element
+ name="LOVLanguageMode"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ViewMode"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Echo"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="CategoryUpdate_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ ref="xsdLocal1:ListOfCategory"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="CategoryExecute_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ ref="xsdLocal1:ListOfCategory"
+></xsd:element
+><xsd:element
+ name="LOVLanguageMode"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ViewMode"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Echo"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="CategoryExecute_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ ref="xsdLocal1:ListOfCategory"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="CategoryInsert_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ ref="xsdLocal1:ListOfCategory"
+></xsd:element
+><xsd:element
+ name="LOVLanguageMode"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ViewMode"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Echo"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="CategoryInsert_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ ref="xsdLocal1:ListOfCategory"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="CategoryDelete_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ ref="xsdLocal1:ListOfCategory"
+></xsd:element
+><xsd:element
+ name="LOVLanguageMode"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ViewMode"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Echo"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="CategoryDelete_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ ref="xsdLocal1:ListOfCategory"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="CategoryQueryPage_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="NamedSearchSpec"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ ref="xsdLocal2:ListOfCategory"
+></xsd:element
+><xsd:element
+ name="LOVLanguageMode"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ViewMode"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="CategoryQueryPage_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ ref="xsdLocal1:ListOfCategory"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+></xsd:schema
+><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:/crmondemand/xml/Category/Data" xmlns:xsdLocal1="urn:/crmondemand/xml/Category/Data" attributeFormDefault="unqualified" elementFormDefault="qualified" 
+><xsd:annotation
+><xsd:documentation
+>Copyright (C) 2001, 2008, Oracle and/or its affiliates. All rights reserved. Siebel XSD Generation</xsd:documentation
+></xsd:annotation
+><xsd:element name="ListOfCategory" type="xsdLocal1:ListOfCategoryData"
+/><xsd:complexType name="ListOfCategoryTopElmtData"
+><xsd:sequence
+><xsd:element name="ListOfCategory" type="xsdLocal1:ListOfCategoryData" minOccurs="1" maxOccurs="1"
+/></xsd:sequence
+></xsd:complexType
+><xsd:complexType name="ListOfCategoryData"
+><xsd:sequence
+><xsd:element name="Category" type="xsdLocal1:CategoryData" minOccurs="0" maxOccurs="unbounded"
+/></xsd:sequence
+><xsd:attribute name="lastpage" type="xsd:boolean"
+/><xsd:attribute name="recordcount" type="xsd:integer"
+/></xsd:complexType
+><xsd:complexType name="CategoryData"
+><xsd:all
+><xsd:element name="ModifiedDate" type="xsd:dateTime" minOccurs="0" maxOccurs="1"
+/><xsd:element name="CreatedDate" type="xsd:dateTime" minOccurs="0" maxOccurs="1"
+/><xsd:element name="ModifiedById" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="CreatedById" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="ModId" type="xsd:int" minOccurs="0" maxOccurs="1"
+/><xsd:element name="Id" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="Description" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="ExternalSystemId" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="IntegrationId" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="Name" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="ParentCategoryExternalSystemId" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="ParentCategoryId" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="ParentCategory" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="UpdatedByFirstName" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="UpdatedByLastName" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="UpdatedByUserSignInId" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="UpdatedByAlias" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="UpdatedByFullName" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="UpdatedByIntegrationId" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="UpdatedByExternalSystemId" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="UpdatedByEMailAddr" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="CreatedByFirstName" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="CreatedByLastName" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="CreatedByUserSignInId" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="CreatedByAlias" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="CreatedByFullName" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="CreatedByIntegrationId" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="CreatedByExternalSystemId" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="CreatedByEMailAddr" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="CreatedBy" type="xsd:string" minOccurs="0" maxOccurs="1"
+/><xsd:element name="ModifiedBy" type="xsd:string" minOccurs="0" maxOccurs="1"
+/></xsd:all
+><xsd:attribute name="operation" type="xsd:string"
+/></xsd:complexType
+></xsd:schema
+></types
+><message
+ name="CategoryUpdate_Input"
+><part
+ name="CategoryUpdate_Input"
+ element="tns:CategoryUpdate_Input"
+></part
+></message
+><message
+ name="CategoryUpdate_Output"
+><part
+ name="CategoryUpdate_Output"
+ element="tns:CategoryUpdate_Output"
+></part
+></message
+><message
+ name="CategoryExecute_Input"
+><part
+ name="CategoryExecute_Input"
+ element="tns:CategoryExecute_Input"
+></part
+></message
+><message
+ name="CategoryExecute_Output"
+><part
+ name="CategoryExecute_Output"
+ element="tns:CategoryExecute_Output"
+></part
+></message
+><message
+ name="CategoryInsert_Input"
+><part
+ name="CategoryInsert_Input"
+ element="tns:CategoryInsert_Input"
+></part
+></message
+><message
+ name="CategoryInsert_Output"
+><part
+ name="CategoryInsert_Output"
+ element="tns:CategoryInsert_Output"
+></part
+></message
+><message
+ name="CategoryDelete_Input"
+><part
+ name="CategoryDelete_Input"
+ element="tns:CategoryDelete_Input"
+></part
+></message
+><message
+ name="CategoryDelete_Output"
+><part
+ name="CategoryDelete_Output"
+ element="tns:CategoryDelete_Output"
+></part
+></message
+><message
+ name="CategoryQueryPage_Input"
+><part
+ name="CategoryQueryPage_Input"
+ element="tns:CategoryQueryPage_Input"
+></part
+></message
+><message
+ name="CategoryQueryPage_Output"
+><part
+ name="CategoryQueryPage_Output"
+ element="tns:CategoryQueryPage_Output"
+></part
+></message
+><portType
+ name="Category"
+><operation
+ name="CategoryUpdate"
+><input
+ message="tns:CategoryUpdate_Input"
+></input
+><output
+ message="tns:CategoryUpdate_Output"
+></output
+></operation
+><operation
+ name="CategoryExecute"
+><input
+ message="tns:CategoryExecute_Input"
+></input
+><output
+ message="tns:CategoryExecute_Output"
+></output
+></operation
+><operation
+ name="CategoryInsert"
+><input
+ message="tns:CategoryInsert_Input"
+></input
+><output
+ message="tns:CategoryInsert_Output"
+></output
+></operation
+><operation
+ name="CategoryDelete"
+><input
+ message="tns:CategoryDelete_Input"
+></input
+><output
+ message="tns:CategoryDelete_Output"
+></output
+></operation
+><operation
+ name="CategoryQueryPage"
+><input
+ message="tns:CategoryQueryPage_Input"
+></input
+><output
+ message="tns:CategoryQueryPage_Output"
+></output
+></operation
+></portType
+><binding
+ name="Category"
+ type="tns:Category"
+><soap:binding
+ transport="http://schemas.xmlsoap.org/soap/http"
+ style="document"
+></soap:binding
+><operation
+ name="CategoryUpdate"
+><soap:operation
+ soapAction="document/urn:crmondemand/ws/ecbs/category/:CategoryUpdate"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+><operation
+ name="CategoryExecute"
+><soap:operation
+ soapAction="document/urn:crmondemand/ws/ecbs/category/:CategoryExecute"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+><operation
+ name="CategoryInsert"
+><soap:operation
+ soapAction="document/urn:crmondemand/ws/ecbs/category/:CategoryInsert"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+><operation
+ name="CategoryDelete"
+><soap:operation
+ soapAction="document/urn:crmondemand/ws/ecbs/category/:CategoryDelete"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+><operation
+ name="CategoryQueryPage"
+><soap:operation
+ soapAction="document/urn:crmondemand/ws/ecbs/category/:CategoryQueryPage"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+></binding
+><service
+ name="Category"
+><port
+ binding="tns:Category"
+ name="Category"
+><soap:address
+ location="https://secure-slsomxvha.crmondemand.com/Services/Integration"
+></soap:address
+></port
+></service
+></definitions
+>

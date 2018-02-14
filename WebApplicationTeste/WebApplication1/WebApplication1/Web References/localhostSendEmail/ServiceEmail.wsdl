@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://br.bayer.bbs.util/webservices/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://br.bayer.bbs.util/webservices/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema targetNamespace="http://br.bayer.bbs.util/webservices/">
+      <s:include schemaLocation="http://localhost:8089/ServiceEmail.asmx?schema=schema1" />
+      <s:import schemaLocation="http://localhost:8089/ServiceEmail.asmx?schema=schema2" namespace="http://tempuri.org/" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="sendMailSoapIn">
+    <wsdl:part name="parameters" element="tns:sendMail" />
+  </wsdl:message>
+  <wsdl:message name="sendMailSoapOut">
+    <wsdl:part name="parameters" element="tns:sendMailResponse" />
+  </wsdl:message>
+  <wsdl:message name="sendMailCCorBCCSoapIn">
+    <wsdl:part name="parameters" element="tns:sendMailCCorBCC" />
+  </wsdl:message>
+  <wsdl:message name="sendMailCCorBCCSoapOut">
+    <wsdl:part name="parameters" element="tns:sendMailCCorBCCResponse" />
+  </wsdl:message>
+  <wsdl:message name="sendMailWithPersonalFromSoapIn">
+    <wsdl:part name="parameters" element="tns:sendMailWithPersonalFrom" />
+  </wsdl:message>
+  <wsdl:message name="sendMailWithPersonalFromSoapOut">
+    <wsdl:part name="parameters" element="tns:sendMailWithPersonalFromResponse" />
+  </wsdl:message>
+  <wsdl:message name="sendMailCCorBCCWithFromNameSoapIn">
+    <wsdl:part name="parameters" element="tns:sendMailCCorBCCWithFromName" />
+  </wsdl:message>
+  <wsdl:message name="sendMailCCorBCCWithFromNameSoapOut">
+    <wsdl:part name="parameters" element="tns:sendMailCCorBCCWithFromNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="sendMailAttachmentCollectionSoapIn">
+    <wsdl:part name="parameters" element="tns:sendMailAttachmentCollection" />
+  </wsdl:message>
+  <wsdl:message name="sendMailAttachmentCollectionSoapOut">
+    <wsdl:part name="parameters" element="tns:sendMailAttachmentCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="sendMailAttachmentCollectionWithFromNameSoapIn">
+    <wsdl:part name="parameters" element="tns:sendMailAttachmentCollectionWithFromName" />
+  </wsdl:message>
+  <wsdl:message name="sendMailAttachmentCollectionWithFromNameSoapOut">
+    <wsdl:part name="parameters" element="tns:sendMailAttachmentCollectionWithFromNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="sendMailAttachmentCollectionBase64SoapIn">
+    <wsdl:part name="parameters" element="tns:sendMailAttachmentCollectionBase64" />
+  </wsdl:message>
+  <wsdl:message name="sendMailAttachmentCollectionBase64SoapOut">
+    <wsdl:part name="parameters" element="tns:sendMailAttachmentCollectionBase64Response" />
+  </wsdl:message>
+  <wsdl:message name="sendMailAttachmentCollectionBase64WithFromNameSoapIn">
+    <wsdl:part name="parameters" element="tns:sendMailAttachmentCollectionBase64WithFromName" />
+  </wsdl:message>
+  <wsdl:message name="sendMailAttachmentCollectionBase64WithFromNameSoapOut">
+    <wsdl:part name="parameters" element="tns:sendMailAttachmentCollectionBase64WithFromNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="sendMailWithReplyToSoapIn">
+    <wsdl:part name="parameters" element="tns:sendMailWithReplyTo" />
+  </wsdl:message>
+  <wsdl:message name="sendMailWithReplyToSoapOut">
+    <wsdl:part name="parameters" element="tns:sendMailWithReplyToResponse" />
+  </wsdl:message>
+  <wsdl:message name="sendMailWithFromNameSoapIn">
+    <wsdl:part name="parameters" element="tns:sendMailWithFromName" />
+  </wsdl:message>
+  <wsdl:message name="sendMailWithFromNameSoapOut">
+    <wsdl:part name="parameters" element="tns:sendMailWithFromNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="sendMailWithFromNameAndReplyToSoapIn">
+    <wsdl:part name="parameters" element="tns:sendMailWithFromNameAndReplyTo" />
+  </wsdl:message>
+  <wsdl:message name="sendMailWithFromNameAndReplyToSoapOut">
+    <wsdl:part name="parameters" element="tns:sendMailWithFromNameAndReplyToResponse" />
+  </wsdl:message>
+  <wsdl:message name="sendMailBlockSoapIn">
+    <wsdl:part name="parameters" element="tns:sendMailBlock" />
+  </wsdl:message>
+  <wsdl:message name="sendMailBlockSoapOut">
+    <wsdl:part name="parameters" element="tns:sendMailBlockResponse" />
+  </wsdl:message>
+  <wsdl:portType name="emailSoap">
+    <wsdl:operation name="sendMail">
+      <wsdl:input message="tns:sendMailSoapIn" />
+      <wsdl:output message="tns:sendMailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendMailCCorBCC">
+      <wsdl:input message="tns:sendMailCCorBCCSoapIn" />
+      <wsdl:output message="tns:sendMailCCorBCCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendMailWithPersonalFrom">
+      <wsdl:input message="tns:sendMailWithPersonalFromSoapIn" />
+      <wsdl:output message="tns:sendMailWithPersonalFromSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendMailCCorBCCWithFromName">
+      <wsdl:input message="tns:sendMailCCorBCCWithFromNameSoapIn" />
+      <wsdl:output message="tns:sendMailCCorBCCWithFromNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendMailAttachmentCollection">
+      <wsdl:input message="tns:sendMailAttachmentCollectionSoapIn" />
+      <wsdl:output message="tns:sendMailAttachmentCollectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendMailAttachmentCollectionWithFromName">
+      <wsdl:input message="tns:sendMailAttachmentCollectionWithFromNameSoapIn" />
+      <wsdl:output message="tns:sendMailAttachmentCollectionWithFromNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendMailAttachmentCollectionBase64">
+      <wsdl:input message="tns:sendMailAttachmentCollectionBase64SoapIn" />
+      <wsdl:output message="tns:sendMailAttachmentCollectionBase64SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendMailAttachmentCollectionBase64WithFromName">
+      <wsdl:input message="tns:sendMailAttachmentCollectionBase64WithFromNameSoapIn" />
+      <wsdl:output message="tns:sendMailAttachmentCollectionBase64WithFromNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendMailWithReplyTo">
+      <wsdl:input message="tns:sendMailWithReplyToSoapIn" />
+      <wsdl:output message="tns:sendMailWithReplyToSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendMailWithFromName">
+      <wsdl:input message="tns:sendMailWithFromNameSoapIn" />
+      <wsdl:output message="tns:sendMailWithFromNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendMailWithFromNameAndReplyTo">
+      <wsdl:input message="tns:sendMailWithFromNameAndReplyToSoapIn" />
+      <wsdl:output message="tns:sendMailWithFromNameAndReplyToSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendMailBlock">
+      <wsdl:input message="tns:sendMailBlockSoapIn" />
+      <wsdl:output message="tns:sendMailBlockSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="emailSoap" type="tns:emailSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="sendMail">
+      <soap:operation soapAction="http://br.bayer.bbs.util/webservices/sendMail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMailCCorBCC">
+      <soap:operation soapAction="http://br.bayer.bbs.util/webservices/sendMailCCorBCC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMailWithPersonalFrom">
+      <soap:operation soapAction="http://br.bayer.bbs.util/webservices/sendMailWithPersonalFrom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMailCCorBCCWithFromName">
+      <soap:operation soapAction="http://br.bayer.bbs.util/webservices/sendMailCCorBCCWithFromName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMailAttachmentCollection">
+      <soap:operation soapAction="http://br.bayer.bbs.util/webservices/sendMailAttachmentCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMailAttachmentCollectionWithFromName">
+      <soap:operation soapAction="http://br.bayer.bbs.util/webservices/sendMailAttachmentCollectionWithFromName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMailAttachmentCollectionBase64">
+      <soap:operation soapAction="http://br.bayer.bbs.util/webservices/sendMailAttachmentCollectionBase64" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMailAttachmentCollectionBase64WithFromName">
+      <soap:operation soapAction="http://br.bayer.bbs.util/webservices/sendMailAttachmentCollectionBase64WithFromName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMailWithReplyTo">
+      <soap:operation soapAction="http://br.bayer.bbs.util/webservices/sendMailWithReplyTo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMailWithFromName">
+      <soap:operation soapAction="http://br.bayer.bbs.util/webservices/sendMailWithFromName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMailWithFromNameAndReplyTo">
+      <soap:operation soapAction="http://br.bayer.bbs.util/webservices/sendMailWithFromNameAndReplyTo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMailBlock">
+      <soap:operation soapAction="http://br.bayer.bbs.util/webservices/sendMailBlock" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="emailSoap1" type="tns:emailSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="sendMail">
+      <soap12:operation soapAction="http://br.bayer.bbs.util/webservices/sendMail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMailCCorBCC">
+      <soap12:operation soapAction="http://br.bayer.bbs.util/webservices/sendMailCCorBCC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMailWithPersonalFrom">
+      <soap12:operation soapAction="http://br.bayer.bbs.util/webservices/sendMailWithPersonalFrom" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMailCCorBCCWithFromName">
+      <soap12:operation soapAction="http://br.bayer.bbs.util/webservices/sendMailCCorBCCWithFromName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMailAttachmentCollection">
+      <soap12:operation soapAction="http://br.bayer.bbs.util/webservices/sendMailAttachmentCollection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMailAttachmentCollectionWithFromName">
+      <soap12:operation soapAction="http://br.bayer.bbs.util/webservices/sendMailAttachmentCollectionWithFromName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMailAttachmentCollectionBase64">
+      <soap12:operation soapAction="http://br.bayer.bbs.util/webservices/sendMailAttachmentCollectionBase64" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMailAttachmentCollectionBase64WithFromName">
+      <soap12:operation soapAction="http://br.bayer.bbs.util/webservices/sendMailAttachmentCollectionBase64WithFromName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMailWithReplyTo">
+      <soap12:operation soapAction="http://br.bayer.bbs.util/webservices/sendMailWithReplyTo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMailWithFromName">
+      <soap12:operation soapAction="http://br.bayer.bbs.util/webservices/sendMailWithFromName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMailWithFromNameAndReplyTo">
+      <soap12:operation soapAction="http://br.bayer.bbs.util/webservices/sendMailWithFromNameAndReplyTo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMailBlock">
+      <soap12:operation soapAction="http://br.bayer.bbs.util/webservices/sendMailBlock" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

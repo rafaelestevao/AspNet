@@ -118,4 +118,3 @@ C:\Users\notew7\Documents\Projetos\AspNet\MaratonaXamarin\MaratonaXamarinAndroid
 C:\Users\notew7\Documents\Projetos\AspNet\MaratonaXamarin\MaratonaXamarinAndroidApp\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\Users\notew7\Documents\Projetos\AspNet\MaratonaXamarin\MaratonaXamarinAndroidApp\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 C:\Users\notew7\Documents\Projetos\AspNet\MaratonaXamarin\MaratonaXamarinAndroidApp\obj\Debug\MaratonaXamarinAndroidApp.dll.mdb
-C:\Users\notew7\Documents\Projetos\AspNet\MaratonaXamarin\MaratonaXamarinAndroidApp\bin\Debug\MaratonaXamarinAndroidApp.dll.mdb

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://br.bayer.bbs.util/webservices/" elementFormDefault="qualified" targetNamespace="http://br.bayer.bbs.util/webservices/" id="schema1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="sendMail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="mailTo" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="subject" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="body" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="htmlMail" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="sendMailResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMailCCorBCC">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="mailTo" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="mailCC" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="mailBCC" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="subject" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="body" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="htmlMail" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMailCCorBCCResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="sendMailCCorBCCResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMailWithPersonalFrom">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="personalMailFrom" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="mailTo" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="mailCC" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="mailBCC" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="subject" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="body" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="htmlMail" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMailWithPersonalFromResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="sendMailWithPersonalFromResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMailCCorBCCWithFromName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="FromName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="mailTo" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="mailCC" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="mailBCC" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="subject" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="body" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="htmlMail" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMailCCorBCCWithFromNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="sendMailCCorBCCWithFromNameResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMailAttachmentCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="mailTo" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="subject" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="body" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="attachList" type="tns:ArrayOfAnyType" />
+        <xs:element minOccurs="0" maxOccurs="1" name="attachListType" type="tns:ArrayOfAnyType" />
+        <xs:element minOccurs="1" maxOccurs="1" name="htmlMail" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfAnyType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="sendMailAttachmentCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="sendMailAttachmentCollectionResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMailAttachmentCollectionWithFromName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="mailTo" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="FromName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="subject" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="body" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="attachList" type="tns:ArrayOfAnyType" />
+        <xs:element minOccurs="0" maxOccurs="1" name="attachListType" type="tns:ArrayOfAnyType" />
+        <xs:element minOccurs="1" maxOccurs="1" name="htmlMail" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMailAttachmentCollectionWithFromNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="sendMailAttachmentCollectionWithFromNameResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMailAttachmentCollectionBase64">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="mailTo" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="subject" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="body" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="attachList" type="tns:ArrayOfAnyType" />
+        <xs:element minOccurs="0" maxOccurs="1" name="attachListType" type="tns:ArrayOfAnyType" />
+        <xs:element minOccurs="1" maxOccurs="1" name="htmlMail" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMailAttachmentCollectionBase64Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="sendMailAttachmentCollectionBase64Result" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMailAttachmentCollectionBase64WithFromName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="mailTo" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="FromName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="subject" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="body" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="attachList" type="tns:ArrayOfAnyType" />
+        <xs:element minOccurs="0" maxOccurs="1" name="attachListType" type="tns:ArrayOfAnyType" />
+        <xs:element minOccurs="1" maxOccurs="1" name="htmlMail" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMailAttachmentCollectionBase64WithFromNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="sendMailAttachmentCollectionBase64WithFromNameResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMailWithReplyTo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="mailTo" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="subject" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="body" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="htmlMail" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="replyTo" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMailWithReplyToResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="sendMailWithReplyToResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMailWithFromName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="mailTo" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="subject" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="body" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="htmlMail" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="FromName" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMailWithFromNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="sendMailWithFromNameResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMailWithFromNameAndReplyTo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="mailTo" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="subject" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="body" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="htmlMail" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="FromName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="replyTo" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMailWithFromNameAndReplyToResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="sendMailWithFromNameAndReplyToResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMailBlock">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="mailTo" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="subject" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="body" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="htmlMail" type="xs:boolean" />
+        <xs:element minOccurs="1" maxOccurs="1" name="numberOfMails" type="xs:long" />
+        <xs:element minOccurs="1" maxOccurs="1" name="numberOfThisMail" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMailBlockResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="sendMailBlockResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -32,9 +32,3 @@ C:\Users\notew7\Documents\Projetos\AspNet\MaratonaXamarin\MaratonaXamarin.Shared
 C:\Users\notew7\Documents\Projetos\AspNet\MaratonaXamarin\MaratonaXamarin.Shared\bin\Debug\System.Net.Http.Primitives.xml
 C:\Users\notew7\Documents\Projetos\AspNet\MaratonaXamarin\MaratonaXamarin.Shared\obj\Debug\MaratonaXamarin.Shared.dll.mdb
 C:\Users\notew7\Documents\Projetos\AspNet\MaratonaXamarin\MaratonaXamarin.Shared\bin\Debug\MaratonaXamarin.Shared.dll.mdb
-C:\Users\notew7\Documents\Projetos\AspNet\MaratonaXamarin\MaratonaXamarin.Shared\obj\Debug\MaratonaXamarin.Shared.dll.mdb
-C:\Users\notew7\Documents\Projetos\AspNet\MaratonaXamarin\MaratonaXamarin.Shared\bin\Debug\MaratonaXamarin.Shared.dll.mdb
-C:\Users\notew7\Documents\Projetos\AspNet\MaratonaXamarin\MaratonaXamarin.Shared\obj\Debug\MaratonaXamarin.Shared.dll.mdb
-C:\Users\notew7\Documents\Projetos\AspNet\MaratonaXamarin\MaratonaXamarin.Shared\bin\Debug\MaratonaXamarin.Shared.dll.mdb
-C:\Users\notew7\Documents\Projetos\AspNet\MaratonaXamarin\MaratonaXamarin.Shared\obj\Debug\MaratonaXamarin.Shared.dll.mdb
-C:\Users\notew7\Documents\Projetos\AspNet\MaratonaXamarin\MaratonaXamarin.Shared\bin\Debug\MaratonaXamarin.Shared.dll.mdb

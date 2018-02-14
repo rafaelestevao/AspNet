@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:i0="http://br.bayer.bbs.util/webservices/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://br.bayer.bbs.util/webservices/" location="http://localhost:8089/ServiceEmail.asmx?wsdl=wsdl1" />
+  <wsdl:types>
+    <s:schema targetNamespace="http://tempuri.org/">
+      <s:import schemaLocation="http://localhost:8089/ServiceEmail.asmx?schema=schema1" namespace="http://br.bayer.bbs.util/webservices/" />
+      <s:include schemaLocation="http://localhost:8089/ServiceEmail.asmx?schema=schema2" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:service name="ServiceEmail">
+    <wsdl:port name="emailSoap" binding="i0:emailSoap">
+      <soap:address location="http://localhost:8089/ServiceEmail.asmx" />
+    </wsdl:port>
+    <wsdl:port name="emailSoap1" binding="i0:emailSoap1">
+      <soap12:address location="http://localhost:8089/ServiceEmail.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

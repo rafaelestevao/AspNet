@@ -1,0 +1,42 @@
+﻿.containerMensagemHome {
+    width: 26%;
+    float: right;
+    margin-top: -245px;
+    color: red;
+    font-style: oblique;
+    font-size: 15px;
+    background: rgb(236,241,249);
+    width: 360px !important;
+}
+
+#divCorrecaoAluguel{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#divMensagemImportante{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+p.mensagem{
+    margin-left: 10px;
+    color: black; 
+    font-style: normal; 
+    margin-top: 10px; 
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.somenteWebPart{
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 8px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+label{font-weight: normal;}
+strong.msgFDA{color:black;}

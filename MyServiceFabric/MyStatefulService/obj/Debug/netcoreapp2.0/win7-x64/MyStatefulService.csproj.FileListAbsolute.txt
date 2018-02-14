@@ -1,0 +1,14 @@
+C:\Users\rafae\Documents\github-pessoal\AspNet\MyServiceFabric\MyStatefulService\obj\Debug\netcoreapp2.0\win7-x64\MyStatefulService.csproj.CoreCompileInputs.cache
+C:\Users\rafae\Documents\github-pessoal\AspNet\MyServiceFabric\MyStatefulService\obj\Debug\netcoreapp2.0\win7-x64\MyStatefulService.AssemblyInfoInputs.cache
+C:\Users\rafae\Documents\github-pessoal\AspNet\MyServiceFabric\MyStatefulService\obj\Debug\netcoreapp2.0\win7-x64\MyStatefulService.AssemblyInfo.cs
+C:\Users\rafae\Documents\github-pessoal\AspNet\MyServiceFabric\MyStatefulService\bin\Debug\netcoreapp2.0\win7-x64\hostpolicy.dll
+C:\Users\rafae\Documents\github-pessoal\AspNet\MyServiceFabric\MyStatefulService\bin\Debug\netcoreapp2.0\win7-x64\hostfxr.dll
+C:\Users\rafae\Documents\github-pessoal\AspNet\MyServiceFabric\MyStatefulService\bin\Debug\netcoreapp2.0\win7-x64\MyStatefulService.exe
+C:\Users\rafae\Documents\github-pessoal\AspNet\MyServiceFabric\MyStatefulService\bin\Debug\netcoreapp2.0\win7-x64\MyStatefulService.deps.json
+C:\Users\rafae\Documents\github-pessoal\AspNet\MyServiceFabric\MyStatefulService\bin\Debug\netcoreapp2.0\win7-x64\MyStatefulService.runtimeconfig.json
+C:\Users\rafae\Documents\github-pessoal\AspNet\MyServiceFabric\MyStatefulService\bin\Debug\netcoreapp2.0\win7-x64\MyStatefulService.runtimeconfig.dev.json
+C:\Users\rafae\Documents\github-pessoal\AspNet\MyServiceFabric\MyStatefulService\bin\Debug\netcoreapp2.0\win7-x64\MyStatefulService.dll
+C:\Users\rafae\Documents\github-pessoal\AspNet\MyServiceFabric\MyStatefulService\bin\Debug\netcoreapp2.0\win7-x64\MyStatefulService.pdb
+C:\Users\rafae\Documents\github-pessoal\AspNet\MyServiceFabric\MyStatefulService\obj\Debug\netcoreapp2.0\win7-x64\MyStatefulService.csprojResolveAssemblyReference.cache
+C:\Users\rafae\Documents\github-pessoal\AspNet\MyServiceFabric\MyStatefulService\obj\Debug\netcoreapp2.0\win7-x64\MyStatefulService.dll
+C:\Users\rafae\Documents\github-pessoal\AspNet\MyServiceFabric\MyStatefulService\obj\Debug\netcoreapp2.0\win7-x64\MyStatefulService.pdb
