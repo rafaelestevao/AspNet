@@ -4,6 +4,8 @@ using System.Threading.Tasks;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Builder.Luis;
 using Microsoft.Bot.Builder.Luis.Models;
+using System.Net.Http;
+using Newtonsoft.Json;
 
 namespace Bot_Application1.Dialogs
 {
@@ -33,7 +35,32 @@ namespace Bot_Application1.Dialogs
         private async Task Cotacao(IDialogContext context, LuisResult result)
         {
             var moedas = result.Entities?.Select(e => e.Entity);
-            await context.PostAsync($"Eu farei uma cotação para as moedas {string.Join("," ,moedas.ToArray())}");
+
+            //aplicando api do azure para cotar as moedas
+            var filtro = string.Join(",", moedas.ToArray());
+            var endpoint = $"http://api-cotacoes-maratona-bots.azurewebsites.net/api/Cotacoes/{filtro}";
+
+            await context.PostAsync("Aguarde um momento enquanto eu obtenho as informações...");
+
+            using (var cliente = new HttpClient())
+            {
+                var response = await cliente.GetAsync(endpoint);
+                if (!response.IsSuccessStatusCode)
+                {
+                    await context.PostAsync("Ocorreu algum erro. Pf, tente novamente mais tarde...");
+                    return;
+                }
+                else
+                {
+                    var json = await response.Content.ReadAsStringAsync();
+                    var resultado = JsonConvert.DeserializeObject<Models.Cotacao[]>(json);
+                    var cotacoes = resultado.Select(c => $"{c.Nome}: {c.Valor}");
+                    await context.PostAsync($"{string.Join(",", cotacoes.ToArray())}");
+                }
+            }
+            //aplicando api do azure para cotar as moedas
+
+            
         }
     }
 }
