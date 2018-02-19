@@ -9,12 +9,12 @@ namespace Bot_Application1.Models
     public class Cotacao
     {
         [JsonProperty("nome")]
-        public int Nome { get; set; }
+        public string Nome { get; set; }
 
         [JsonProperty("sigla")]
-        public int Sigla { get; set; }
+        public string Sigla { get; set; }
 
         [JsonProperty("valor")]
-        public int Valor { get; set; }
+        public string Valor { get; set; }
     }
 }

@@ -6,6 +6,7 @@ using Microsoft.Bot.Builder.Luis;
 using Microsoft.Bot.Builder.Luis.Models;
 using System.Net.Http;
 using Newtonsoft.Json;
+using System.Configuration;
 
 namespace Bot_Application1.Dialogs
 {
@@ -13,6 +14,8 @@ namespace Bot_Application1.Dialogs
     [LuisModel("fe1fd0eb-7a5e-4395-bf56-45a1ac0c5c49", "24a644fa2f114a8a9665a30a819f0393")]
     public class CotacaoDialog : LuisDialog<object>
     {
+        private string urlApiMaratonaBots = ConfigurationManager.AppSettings["urlApiMaratonaBots"];
+
         [LuisIntent("None")]
         private async Task None(IDialogContext context, LuisResult result)
         {
@@ -38,7 +41,7 @@ namespace Bot_Application1.Dialogs
 
             //aplicando api do azure para cotar as moedas
             var filtro = string.Join(",", moedas.ToArray());
-            var endpoint = $"http://api-cotacoes-maratona-bots.azurewebsites.net/api/Cotacoes/{filtro}";
+            var endpoint = $"{urlApiMaratonaBots}{filtro}";
 
             await context.PostAsync("Aguarde um momento enquanto eu obtenho as informações...");
 

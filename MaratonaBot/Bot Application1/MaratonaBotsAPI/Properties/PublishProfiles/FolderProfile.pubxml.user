@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\wwwroot\ApiMaratonaBots</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>02/17/2018 01:05:36</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>02/17/2018 01:05:36</publishTime>
+    </File>
+    <File Include="MaratonaBotsAPI.deps.json">
+      <publishTime>02/18/2018 15:04:43</publishTime>
+    </File>
+    <File Include="MaratonaBotsAPI.dll">
+      <publishTime>02/18/2018 15:04:41</publishTime>
+    </File>
+    <File Include="MaratonaBotsAPI.pdb">
+      <publishTime>02/18/2018 15:04:41</publishTime>
+    </File>
+    <File Include="MaratonaBotsAPI.PrecompiledViews.dll">
+      <publishTime>02/18/2018 15:04:42</publishTime>
+    </File>
+    <File Include="MaratonaBotsAPI.PrecompiledViews.pdb">
+      <publishTime>02/18/2018 15:04:42</publishTime>
+    </File>
+    <File Include="MaratonaBotsAPI.runtimeconfig.json">
+      <publishTime>02/18/2018 15:04:43</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>02/18/2018 15:04:43</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
