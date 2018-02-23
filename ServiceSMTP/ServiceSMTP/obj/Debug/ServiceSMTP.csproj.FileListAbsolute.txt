@@ -1,0 +1,12 @@
+C:\Users\rafael.estevao\Documents\ProjetosSvn\merck-service-smtp\ServiceSMTP\ServiceSMTP\bin\Debug\ServiceSMTP.exe.config
+C:\Users\rafael.estevao\Documents\ProjetosSvn\merck-service-smtp\ServiceSMTP\ServiceSMTP\bin\Debug\ServiceSMTP.exe
+C:\Users\rafael.estevao\Documents\ProjetosSvn\merck-service-smtp\ServiceSMTP\ServiceSMTP\bin\Debug\ServiceSMTP.pdb
+C:\Users\rafael.estevao\Documents\ProjetosSvn\merck-service-smtp\ServiceSMTP\ServiceSMTP\obj\Debug\ServiceSMTP.csprojResolveAssemblyReference.cache
+C:\Users\rafael.estevao\Documents\ProjetosSvn\merck-service-smtp\ServiceSMTP\ServiceSMTP\obj\Debug\ServiceSMTP.csproj.CoreCompileInputs.cache
+C:\Users\rafael.estevao\Documents\ProjetosSvn\merck-service-smtp\ServiceSMTP\ServiceSMTP\obj\Debug\ServiceSMTP.exe
+C:\Users\rafael.estevao\Documents\ProjetosSvn\merck-service-smtp\ServiceSMTP\ServiceSMTP\obj\Debug\ServiceSMTP.pdb
+C:\Users\rafael.estevao\Documents\ProjetosSvn\merck-service-smtp\ServiceSMTP\ServiceSMTP\bin\Debug\OpenPop.dll
+C:\Users\rafael.estevao\Documents\ProjetosSvn\merck-service-smtp\ServiceSMTP\ServiceSMTP\bin\Debug\Ftp.dll
+C:\Users\rafael.estevao\Documents\ProjetosSvn\merck-service-smtp\ServiceSMTP\ServiceSMTP\bin\Debug\Mail.dll
+C:\Users\rafael.estevao\Documents\ProjetosSvn\merck-service-smtp\ServiceSMTP\ServiceSMTP\bin\Debug\Ftp.xml
+C:\Users\rafael.estevao\Documents\ProjetosSvn\merck-service-smtp\ServiceSMTP\ServiceSMTP\bin\Debug\Mail.xml
