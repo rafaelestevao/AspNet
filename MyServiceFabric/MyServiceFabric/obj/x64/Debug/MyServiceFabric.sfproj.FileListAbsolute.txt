@@ -1,1 +1,0 @@
-C:\Users\rafae\Documents\github-pessoal\AspNet\MyServiceFabric\MyServiceFabric\obj\x64\Debug\MyServiceFabric.sfproj.CoreCompileInputs.cache

@@ -1,7 +1,0 @@
-C:\Users\rafael.estevao\Documents\ProjetosSvn\merck-service-smtp\ServiceSMTP\ServiceSMTP\bin\Release\ServiceSMTP.exe.config
-C:\Users\rafael.estevao\Documents\ProjetosSvn\merck-service-smtp\ServiceSMTP\ServiceSMTP\bin\Release\ServiceSMTP.exe
-C:\Users\rafael.estevao\Documents\ProjetosSvn\merck-service-smtp\ServiceSMTP\ServiceSMTP\bin\Release\ServiceSMTP.pdb
-C:\Users\rafael.estevao\Documents\ProjetosSvn\merck-service-smtp\ServiceSMTP\ServiceSMTP\bin\Release\OpenPop.dll
-C:\Users\rafael.estevao\Documents\ProjetosSvn\merck-service-smtp\ServiceSMTP\ServiceSMTP\obj\Release\ServiceSMTP.csproj.CoreCompileInputs.cache
-C:\Users\rafael.estevao\Documents\ProjetosSvn\merck-service-smtp\ServiceSMTP\ServiceSMTP\obj\Release\ServiceSMTP.exe
-C:\Users\rafael.estevao\Documents\ProjetosSvn\merck-service-smtp\ServiceSMTP\ServiceSMTP\obj\Release\ServiceSMTP.pdb
